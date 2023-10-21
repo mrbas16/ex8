@@ -2,11 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Clone repo') {
             steps {
-            }
-        stage('Hello') {
-            steps {
+                git 'https://github.com/mrbas16/ex8.git'
+                bat 'dir'
             }
         }
     }
