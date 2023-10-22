@@ -6,6 +6,7 @@ pipeline {
         stage('Hello') {
             steps {
                 bat 'dir'
+                bat 'python main.py'
             }
         }
         stage('Buy') {
