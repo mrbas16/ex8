@@ -11,6 +11,7 @@ pipeline {
         stage('Buy') {
             steps {
                 bat 'dir'
+                bat 'time /t'
             }
         }        
     }
